@@ -1,0 +1,23 @@
+<br>
+<div class="container ">
+    <p class="fs-2 text-center">Historial de búsquedas</p>
+        <table class="table table-bordered table-responsive table-success table-info text-center">
+                <thead>
+                <tr class="table-dark text-white " >
+                    <th scope="col">Dirección</th>
+                    <th scope="col">Tiempo</th>
+                    <th scope="col">Velocidad de viento</th>
+                </tr>
+                </thead>
+                
+                <tbody>
+                <tr *ngFor="let element of data">
+                
+                    <td>{{element.direccion| titlecase}}</td>
+                    <td>{{element.tiempo | titlecase }}</td>
+                    <td>{{element.viento}}</td>
+             
+                </tr>
+                </tbody>
+        </table>
+ </div>

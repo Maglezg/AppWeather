@@ -1,0 +1,36 @@
+<div *ngIf ="datoshome" class="container mt-5">
+  <p class="fs-2 text-center">El tiempo en las siquientes ciudades</p>
+  <div class="row  row-cols-1 row-cols-md-3 d-flex justify-content-center"> 
+    <div class="card text-center" style="width: 20rem;">
+        <img src="https://openweathermap.org/img/w/{{datoshome.weather[0].icon}}.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5>{{datoshome.name}}</h5>
+          <p class="card-text">{{datoshome.weather[0].description}}</p>
+          <p class="card-text">Máximas: {{datoshome.main.temp_min}}ºK</p>
+          <p class="card-text">Mínimas: {{datoshome.main.temp_max}}ºK</p>
+          <p class="card-text">Humedad: {{datoshome.main.humidity}}%</p>
+
+        </div>
+      </div>
+      <div class="card text-center" style="width: 20rem;">
+        <img src="https://openweathermap.org/img/w/{{datoshome1.weather[0].icon}}.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5>{{datoshome1.name}}</h5>
+          <p class="card-text">{{datoshome1.weather[0].description}}</p>
+          <p class="card-text">Máximas: {{datoshome1.main.temp_min}}ºK</p>
+          <p class="card-text">Mínimas: {{datoshome1.main.temp_max}}ºK</p>
+          <p class="card-text">Humedad: {{datoshome1.main.humidity}}%</p>
+        </div>
+      </div>
+      <div class="card text-center" style="width: 20rem;">
+        <img src="https://openweathermap.org/img/w/{{datoshome2.weather[0].icon}}.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5>{{datoshome2.name}}</h5>
+          <p class="card-text">{{datoshome2.weather[0].description}}</p>
+          <p class="card-text">Máximas: {{datoshome2.main.temp_min}}ºK</p>
+          <p class="card-text">Mínimas: {{datoshome2.main.temp_max}}ºK</p>
+          <p class="card-text">Humedad: {{datoshome2.main.humidity}}%</p>
+        </div>
+      </div>
+  </div>
+</div>
